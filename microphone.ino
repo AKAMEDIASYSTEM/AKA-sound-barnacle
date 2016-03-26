@@ -33,9 +33,9 @@ void listen() {
 
 
 void everyMinute() {
-  Serial.println("Timer fired, currentMin and currentMax next");
-  Serial.println(currentMin);
-  Serial.println(currentMax);
+  // // Serial.println("Timer fired, currentMin and currentMax next");
+  // Serial.println(currentMin);
+  // Serial.println(currentMax);
   for (int i = NUM_PIXELS - 1; i > 0; i--) {
     // make room for new entry at 0 by shifting everything to the next index over
     pastMin[i] = pastMin[i - 1];
@@ -48,8 +48,8 @@ void everyMinute() {
   pastMin[0] = currentMin;
   pastMax[0] = currentMax;
   levels[0] = abs(currentMax - currentMin);
-  Serial.print("Levels for this minute is ");
-  Serial.println(levels[0]);
+  // Serial.print("Levels for this minute is ");
+  // Serial.println(levels[0]);
   r[0] = (levels[0] < 196 ) ? 0 : levels[0];
   g[0] = (levels[0] < 128 ) ? levels[0] : 0;
   b[0] = (levels[0] < 64 ) ? 255 : 0;

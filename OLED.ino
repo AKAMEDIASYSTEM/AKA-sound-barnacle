@@ -19,12 +19,12 @@ void testdrawbitmap(const uint8_t *bitmap, uint8_t w, uint8_t h) {
     icons[f][YPOS] = 0;
     icons[f][DELTAY] = random(5) + 1;
 
-    Serial.print("x: ");
-    Serial.print(icons[f][XPOS], DEC);
-    Serial.print(" y: ");
-    Serial.print(icons[f][YPOS], DEC);
-    Serial.print(" dy: ");
-    Serial.println(icons[f][DELTAY], DEC);
+    // // Serial.print("x: ");
+    // // Serial.print(icons[f][XPOS], DEC);
+    // // Serial.print(" y: ");
+    // Serial.print(icons[f][YPOS], DEC);
+    // Serial.print(" dy: ");
+    // Serial.println(icons[f][DELTAY], DEC);
   }
 
   while (1) {
