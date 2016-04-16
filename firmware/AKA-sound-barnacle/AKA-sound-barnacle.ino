@@ -42,7 +42,7 @@ Adafruit_SSD1306 display(OLED_RESET);
 #define NEO_PIN 10
 #define NUM_PIXELS 60
 #define MIC_PIN A1
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_PIXELS, NEO_PIN, NEO_GRB + NEO_KHZ800); // NUM_PIXELS minutes of data
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_PIXELS, NEO_PIN, NEO_WGBR + NEO_KHZ800); // NUM_PIXELS minutes of data
 
 // NUM_PIXELS sized array of colors
 int r[NUM_PIXELS];
