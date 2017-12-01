@@ -87,7 +87,7 @@ int levels[NUM_PIXELS];
 int currentMax = 512;
 int currentMin = 512;
 
-Timer *timer1 = new Timer(5000);
+Timer *timer1 = new Timer(60000);
 
 void setup() {
   timer1->setOnTimer(&everyMinute);
@@ -203,7 +203,9 @@ void loop() {
             client.print("<div >At t= ");
             client.print(timebin);
             client.print(" the range was from ");
-            client.print(pastMin[timebin] + " to " + pastMax[timebin]);
+            client.print(pastMin[timebin]);
+            client.print(" to " );
+            client.print(pastMax[timebin]);
             client.println("</div><br />");
           }
           client.println("</html>");
